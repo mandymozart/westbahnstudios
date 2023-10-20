@@ -66,3 +66,8 @@ main img {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
 }
+#sponsors img {
+  width: 12px;
+  display: flex;
+  gap: 1rem;
+}
