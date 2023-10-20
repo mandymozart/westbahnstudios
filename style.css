@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Geo';
-  src: url("./GeosansLight.woff2") format("woff2");
+  src: url("fonts/GeosansLight.woff2") format("woff2");
   font-display: fallback;
 }
 
