@@ -11,6 +11,8 @@ body {
   font-size: 21px;
   background-color: #FFF;
   color: #000;
+  margin: 0;
+  padding: 0;
   line-height: 1.4em;
   font-family: 'Geo', sans-serif, Arial, sans-serif;
 }
@@ -38,7 +40,8 @@ img {
 
 main {
   max-width: var(--page-width);
-  margin: 3rem auto;
+  margin: 1rem auto;
+  padding: 2rem;
 }    
 @media (max-width:1080px)  { 
   div {
