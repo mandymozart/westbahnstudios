@@ -4,6 +4,7 @@
 <meta charset='utf-8'>
   <title>Kontakt / Impressum : Westbahnstudios</title>
   <link rel="stylesheet" href="style.css?" />
+  <link href="https://db.onlinewebfonts.com/c/228984258eaa17737d6d3fdcc03f6f1f?family=GeosansLight" rel="stylesheet" type="text/css"/>
   <script type='module'>
     import * as prismic from 'https://cdn.skypack.dev/@prismicio/client'
 
@@ -14,7 +15,6 @@
       const prismicDoc = await client.getFirst()
       const { image } = prismicDoc.data
      const el = document.getElementById('image')
-     console.log(prismicDoc)
      el.src = image.url
     }
 
@@ -29,19 +29,19 @@
     cooperation with the City of Vienna. All work spaces were developed and designed by
     musicians for musicians.</p>
 
-    <p>For rental enquiries please contact Eva Perner by email (link) -
+    <p>For rental enquiries please contact Eva Perner by email -
     <a href="mailto:eva@westbahnstudios.at">eva@westbahnstudios.at</a></p>
 
     <p>Basic information on room sizes and available technical equipment can be found
-    <a href="/BASICINFO-SHEET_WBS.pdf">here (pdf)</a></p>
+    <a href="BASICINFO-SHEET_WBS.pdf">here (pdf)</a></p>
   </div>
 
   <main>
-    <div id='news'><img src='/content/flyer-karo-preuschel.jpg' alt='AIR showcase'/><img id='image' src='' alt='news'/></div>
+    <div id='news'><img id='image' src='' alt='news'/></div>
     <div id='studio-views'>
-      <img src="/content/probesaal.jpg" alt="probesaal" />
-      <img src="/content/aufenthaltsraum.jpg" alt="aufenthaltsraum" />
-      <img src="/content/airstudio.jpg" alt="AIR studio" />
+      <img src="content/probesaal.jpg" alt="probesaal" />
+      <img src="content/aufenthaltsraum.jpg" alt="aufenthaltsraum" />
+      <img src="content/airstudio.jpg" alt="AIR studio" />
     </div>
   </main>
 

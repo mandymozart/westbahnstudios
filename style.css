@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Geo';
-  src: url("/GeosansLight.ttf") format("truetype");
+  src: url("./GeosansLight.woff2") format("woff2");
   font-display: fallback;
 }
 
@@ -54,6 +54,15 @@ em, i {
 #banner.text {
 }
 
-#under-construction {
-  text-align: center;
+main {
+  max-width: 768px;
+  margin: 0 auto;
 }    
+main img {
+  width: 100%;
+}
+#studio-views {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
