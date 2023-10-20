@@ -44,7 +44,7 @@ main {
   padding: 2rem;
 }    
 @media (max-width:1080px)  { 
-  div {
+  div#exhibit, div#studio-views {
     grid-template-columns: 1fr;
   }
 }
