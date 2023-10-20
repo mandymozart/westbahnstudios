@@ -58,10 +58,11 @@ main {
 }
 #sponsors {
   display: flex;
+  align-items: center;
   gap: 1rem;
+  margin-top: 3rem;
 }
 #sponsors img {
   max-width: 6rem;
-  margin: 1rem;
 }
 
