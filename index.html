@@ -13,8 +13,9 @@
     const init = async () => {
       const prismicDoc = await client.getFirst()
       const { image } = prismicDoc.data
-     const container = document.getElementById('news')
-     container.innerHTML = JSON.stringify(image)
+     const el = document.getElementById('image')
+     console.log(prismicDoc)
+     el.src = image.url
     }
 
     init()
