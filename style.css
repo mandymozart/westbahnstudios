@@ -4,7 +4,7 @@
   font-display: fallback;
 }
 :root {
-  --page-width: 830px;
+  --page-width: 1080px;
 }
 
 body {
@@ -24,18 +24,6 @@ a:hover {
   text-decoration: underline;
 }
 
-#exhibit {
-  max-width: var(--page-width);
-  margin: 0 auto;
-  display: flex;
-  gap: 1rem;
-  justify-content: space-between;
-}
-
-#exhibit p {
-  vertical-align: top;
-}
-
 strong, b {
   font-weight: bold;
 }
@@ -44,19 +32,24 @@ em, i {
   font-style: italic;
 }
 
-#banner {
-  width: var(--page-width);
-  text-align: justify;
-  line-height: normal;
-  margin: 3rem auto;
+img {
+  max-width: 100%;
 }
 
 main {
   max-width: var(--page-width);
-  margin: 0 auto;
+  margin: 3rem auto;
 }    
-main img {
-  max-width: 100%;
+@media (min-width:1080px)  { 
+  div {
+    flex-direction: row;
+  }
+}
+
+#exhibit {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
 }
 #studio-view {
   display: grid;
@@ -66,10 +59,9 @@ main img {
 #sponsors {
   display: flex;
   gap: 1rem;
-  max-width: var(--page-width);
-  margin: 0 auto;
 }
 #sponsors img {
   max-width: 6rem;
   margin: 1rem;
 }
+
