@@ -13,7 +13,7 @@
     const init = async () => {
       const prismicDoc = await client.getFirst()
       const { image } = prismicDoc.data
-     const container = document.getElementById('container')
+     const container = document.getElementById('news')
      container.innerHTML = JSON.stringify(image)
     }
 
@@ -35,9 +35,14 @@
     <a href="/BASICINFO-SHEET_WBS.pdf">here (pdf)</a></p>
   </div>
 
-  <div id="under-construction">
-    <div id='container'></div>
-  </div>
+  <main>
+    <div id='news'><img src='/content/flyer-karo-preuschel.jpg' alt='AIR showcase'/><img id='image' src='' alt='news'/></div>
+    <div id='studio-views'>
+      <img src="/content/probesaal.jpg" alt="probesaal" />
+      <img src="/content/aufenthaltsraum.jpg" alt="aufenthaltsraum" />
+      <img src="/content/airstudio.jpg" alt="AIR studio" />
+    </div>
+  </main>
 
   <div id='exhibit'>
     <p><b>WESTBAHNSTUDIOS</b><br>
@@ -63,6 +68,10 @@
 
     <p><b>Geschäftsführer und Gesellschafter:</b><br>
     Dominik Hummer, Peter Kutin, Daniel Riegler</p>
+  </div>
+  <div id="sponsors"><b>supported by:</b><br />
+  <img src="images/SKE_logo_sw_auf_weiss.jpg" alt="SKE" />
+  <img src="images/Stadt_Wien_Kultur_pos_rgb.png" alt="Stadt Wien" />
   </div>
 </body>
 </html>
