@@ -3,13 +3,16 @@
   src: url("fonts/GeosansLight.woff2") format("woff2");
   font-display: fallback;
 }
+:root {
+  --page-width: 830px;
+}
 
 body {
-  font-size: 14px;
+  font-size: 21px;
   background-color: #FFF;
   color: #000;
   line-height: 1.4em;
-  font-family: 'Geo', Nexa, Arial, sans-serif;
+  font-family: 'Geo', sans-serif, Arial, sans-serif;
 }
 
 a {
@@ -22,10 +25,8 @@ a:hover {
 }
 
 #exhibit {
-  height: 100%;
-  top: 0;
-  width: 860px;
-  margin: auto;
+  max-width: var(--page-width);
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
@@ -44,18 +45,14 @@ em, i {
 }
 
 #banner {
-  width: 830px;
-  font-size: 21px;
+  width: var(--page-width);
   text-align: justify;
   line-height: normal;
-  margin: 22.5px auto;
-}
-
-#banner.text {
+  margin: 1rem auto;
 }
 
 main {
-  max-width: 768px;
+  max-width: var(--page-width);
   margin: 0 auto;
 }    
 main img {
@@ -66,8 +63,13 @@ main img {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
 }
-#sponsors img {
+#sponsors {
   display: flex;
   gap: 1rem;
+  max-width: var(--page-width);
+  margin: 0 auto;
+}
+#sponsors img {
   max-width: 6rem;
+  margin: 1rem;
 }
