@@ -51,7 +51,7 @@ main {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1rem;
 }
-#studio-view {
+#studio-views {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
