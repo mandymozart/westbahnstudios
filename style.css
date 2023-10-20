@@ -59,15 +59,15 @@ main {
   margin: 0 auto;
 }    
 main img {
-  width: 100%;
+  max-width: 100%;
 }
-#studio-views {
+#studio-view {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
 }
 #sponsors img {
-  width: 12px;
   display: flex;
   gap: 1rem;
+  max-width: 6rem;
 }
