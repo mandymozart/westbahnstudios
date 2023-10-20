@@ -42,7 +42,7 @@ main {
 }    
 @media (max-width:1080px)  { 
   div {
-    flex-direction: row;
+    grid-template-columns: 1fr;
   }
 }
 
