@@ -1,24 +1,67 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Prismic Vanilla JavaScript App</title>
-    <script type='module'>
-      import * as prismic from 'https://cdn.skypack.dev/@prismicio/client'
+<!doctype html>
+<html lang='en-us'>
+<head>
+<meta charset='utf-8'>
+  <title>Kontakt / Impressum : Westbahnstudios</title>
+  <link rel="stylesheet" href="style.css?" />
+  <script type='module'>
+    import * as prismic from 'https://cdn.skypack.dev/@prismicio/client'
 
-      const repositoryName = 'westbahnstudios'
-      const client = prismic.createClient(repositoryName)
+    const repositoryName = 'westbahnstudios'
+    const client = prismic.createClient(repositoryName)
 
-      const init = async () => {
-        const prismicDoc = await client.getFirst()
-        const { image } = prismicDoc.data
-       const container = document.getElementById('container')
-       container.innerHTML = JSON.stringify(image)
-      }
+    const init = async () => {
+      const prismicDoc = await client.getFirst()
+      const { image } = prismicDoc.data
+     const container = document.getElementById('container')
+     container.innerHTML = JSON.stringify(image)
+    }
 
-      init()
-    </script>
-  </head>
-  <body>
+    init()
+  </script>
+</head>
+<body>
+  <div id="banner" class="text"> 
+    <p>The Westbahnstudios see themselves as a place where all forms of advanced music
+    and sonic arts can be developed, rehearsed or produced.<br>
+    Rental is possible on a daily basis and can be kept cost-effective through a
+    cooperation with the City of Vienna. All work spaces were developed and designed by
+    musicians for musicians.</p>
+
+    <p>For rental enquiries please contact Eva Perner by email (link) -
+    <a href="mailto:eva@westbahnstudios.at">eva@westbahnstudios.at</a></p>
+
+    <p>Basic information on room sizes and available technical equipment can be found
+    <a href="/BASICINFO-SHEET_WBS.pdf">here (pdf)</a></p>
+  </div>
+
+  <div id="under-construction">
     <div id='container'></div>
-  </body>
+  </div>
+
+  <div id='exhibit'>
+    <p><b>WESTBAHNSTUDIOS</b><br>
+    <b>Eingang:</b> Preysinggasse 5<br>
+    <b>Anlieferung:</b> Preysinggasse 7-9<br>
+    1150 Wien</p>
+
+    <p><b>Info und Kontakt:</b><br>
+    <a href="mailto:info@westbahnstudios.at">info@westbahnstudios.at</a><br>
+    <a href="https://www.westbahnstudios.at">www.westbahnstudios.at</a><br>
+    <br>
+    Eva Perner BA<br>
+    <a href="tel:+436644018292">+43 664 401 82 92</a>
+    </p>
+
+    <p><b>Betreiber:</b><br>
+    WBS Tonräume gemeinnützige GmbH<br>
+    Preysinggasse 7-9/1<br>
+    1150 Wien<br>
+    <b>Firmenbuchnummer:</b><br>
+    FN 576047 d<br></p>
+
+    <p><b>Geschäftsführer und Gesellschafter:</b><br>
+    Dominik Hummer, Peter Kutin, Daniel Riegler</p>
+  </div>
+</body>
 </html>

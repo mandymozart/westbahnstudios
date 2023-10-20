@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prismic Vanilla JavaScript App</title>
+    <script type='module'>
+      import * as prismic from 'https://cdn.skypack.dev/@prismicio/client'
+
+      const repositoryName = 'westbahnstudios'
+      const client = prismic.createClient(repositoryName)
+
+      const init = async () => {
+        const prismicDoc = await client.getFirst()
+        const { image } = prismicDoc.data
+       const container = document.getElementById('container')
+       container.innerHTML = JSON.stringify(image)
+      }
+
+      init()
+    </script>
+  </head>
+  <body>
+    <div id='container'></div>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Geo';
+  src: url("/GeosansLight.ttf") format("truetype");
+  font-display: fallback;
+}
+
+body {
+  font-size: 14px;
+  background-color: #FFF;
+  color: #000;
+  line-height: 1.4em;
+  font-family: 'Geo', Nexa, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#exhibit {
+  height: 100%;
+  top: 0;
+  width: 860px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#exhibit p {
+  margin: 1em auto 1em;
+  vertical-align: top;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+em, i {
+  font-style: italic;
+}
+
+#banner {
+  width: 830px;
+  font-size: 21px;
+  text-align: justify;
+  line-height: normal;
+  margin: 22.5px auto;
+}
+
+#banner.text {
+}
+
+#under-construction {
+  text-align: center;
+}    
