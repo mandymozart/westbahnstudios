@@ -3,7 +3,78 @@
 <head>
 <meta charset='utf-8'>
   <title>Kontakt / Impressum : Westbahnstudios</title>
-  <link rel="stylesheet" href="style.css?" />
+  <style>
+    @font-face {
+  font-family: 'Geo';
+  src: url("fonts/GeosansLight.woff2") format("woff2");
+  font-display: fallback;
+}
+:root {
+  --page-width: 1080px;
+}
+
+body {
+  font-size: 21px;
+  background-color: #FFF;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  line-height: 1.4em;
+  font-family: 'Geo', sans-serif, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+em, i {
+  font-style: italic;
+}
+
+img {
+  max-width: 100%;
+}
+
+main {
+  max-width: var(--page-width);
+  margin: 1rem auto;
+  padding: 2rem;
+}    
+@media (max-width:1080px)  { 
+  div#exhibit, div#studio-views {
+    grid-template-columns: 1fr;
+  }
+}
+
+#exhibit {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+#studio-views {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+#sponsors {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+#sponsors img {
+  max-width: 6rem;
+}
+  </style>
   <script type='module'>
     import * as prismic from 'https://cdn.skypack.dev/@prismicio/client'
 
